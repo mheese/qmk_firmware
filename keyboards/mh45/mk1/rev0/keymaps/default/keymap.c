@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FN] = LAYOUT(
         KC_GRAVE,       LSFT(KC_1),     LSFT(KC_2),     LSFT(KC_3),     LSFT(KC_4),  LSFT(KC_5),     LSFT(KC_6),     LSFT(KC_7), LSFT(KC_8), LSFT(KC_9), LSFT(KC_0), LSFT(KC_EQUAL), KC_DELETE,
-        KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,        KC_5,           KC_6,           KC_7,       KC_8,       KC_9        KC_0,       KC_EQUAL,       KC_TRANSPARENT,
+        KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,        KC_5,           KC_6,           KC_7,       KC_8,       KC_9,       KC_0,       KC_EQUAL,       KC_TRANSPARENT,
         KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          KC_LBRACKET, KC_BSLASH,      KC_RBRACKET,    KC_NO,      KC_NO,      KC_NO,      KC_PGUP,    KC_TRANSPARENT,
         KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,       KC_TRANSPARENT, KC_TRANSPARENT, KC_HOME,    KC_PGDOWN,  KC_END,     KC_NO
     )
