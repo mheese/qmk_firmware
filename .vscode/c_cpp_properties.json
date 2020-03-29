@@ -5,7 +5,14 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
-                "${workspaceFolder}"
+                "${workspaceFolder}",
+                "${workspaceFolder}/quantum",
+                "${workspaceFolder}/tmk_core/common",
+                "${workspaceFolder}/quantum/audio",
+                "${workspaceFolder}/quantum/process_keycode",
+                "${workspaceFolder}/drivers/avr",
+                "${workspaceFolder}/lib/chibios",
+                "${workspaceFolder}/lib/lufa"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -88,4 +95,3 @@
     ],
     "version": 4
 }
-
