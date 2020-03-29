@@ -13,6 +13,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/* IntelliSense START
+ * Only necessary to satisfy VSCode
+ */
+#ifdef __INTELLISENSE__
+#include "../../config.h"
+#define QMK_KEYBOARD_H "../../rev0.h"
+#endif
+/* IntelliSense END */
+
 #include QMK_KEYBOARD_H
 
 #define _LAYER_BASE 0
