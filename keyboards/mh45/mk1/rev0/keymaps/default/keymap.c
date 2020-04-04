@@ -48,31 +48,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,                KC_COMMA, KC_DOT,  KC_J,    KC_G,                 KC_SLASH,                 KC_SCOLON, KC_W,    KC_K,    KC_MINUS,       KC_X,         KC_RSFT,
         MO(_LAYER_FN),          KC_LCTRL, KC_LALT, KC_LGUI, LT(_LAYER_NUM, KC_E), LT(_LAYER_SYM, KC_SPACE), KC_RGUI,   KC_RALT, KC_RCTL, TG(_LAYER_NAV), MO(_LAYER_FN)
     ),
-    [_LAYER_NUM] = LAYOUT( /* Base */
+    [_LAYER_NUM] = LAYOUT( /* Numbers */
         KC_ESC,         KC_NO,    KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,          KC_DELETE, KC_BSPACE,
         KC_NO,          KC_1,     KC_2,    KC_3,    KC_4,           KC_5,     KC_6,    KC_7,    KC_8,    KC_9,  KC_0,           KC_NO,     KC_ENTER,
         KC_NO,          KC_NO,    KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,          KC_NO,
-        MO(_LAYER_SYS), KC_LCTRL, KC_LALT, KC_LGUI, KC_TRANSPARENT, KC_ENTER, KC_RGUI, KC_RALT, KC_RCTL, KC_NO, MO(_LAYER_SYS)
+        KC_NO,          KC_LCTRL, KC_LALT, KC_LGUI, KC_TRANSPARENT, KC_ENTER, KC_RGUI, KC_RALT, KC_RCTL, KC_NO, KC_NO
     ),
-    [_LAYER_SYM] = LAYOUT( /* Base */
+    [_LAYER_SYM] = LAYOUT( /* Symbols */
         KC_ESC,         KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_DELETE, KC_BSPACE,
         KC_NO,          LSFT(KC_1), LSFT(KC_2), LSFT(KC_3), LSFT(KC_4), LSFT(KC_5),     LSFT(KC_6), LSFT(KC_7), LSFT(KC_8), LSFT(KC_9), LSFT(KC_0),     KC_NO,     KC_ENTER,
         KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,          KC_NO,
-        MO(_LAYER_SYS), KC_LCTRL,   KC_LALT,    KC_LGUI,    KC_BSPACE,  KC_TRANSPARENT, KC_RGUI,    KC_RALT,    KC_RCTL,    KC_NO,      MO(_LAYER_SYS)
+        KC_NO,          KC_LCTRL,   KC_LALT,    KC_LGUI,    KC_BSPACE,  KC_TRANSPARENT, KC_RGUI,    KC_RALT,    KC_RCTL,    KC_NO,      KC_NO
     ),
-    [_LAYER_FN] = LAYOUT(
+    [_LAYER_FN] = LAYOUT( /* FN */
         KC_ESC,         KC_NO,             KC_NO,             KC_NO,       KC_NO,          KC_NO,           KC_NO,     KC_NO,    KC_NO,          KC_NO,  KC_NO,          KC_NO, KC_DELETE,
         KC_NO,          LSFT(KC_LBRACKET), LSFT(KC_RBRACKET), KC_LBRACKET, KC_RBRACKET,    LSFT(KC_BSLASH), KC_BSLASH, KC_GRAVE, LSFT(KC_GRAVE), KC_NO,  KC_NO,          KC_NO, KC_NO,
         KC_NO,          KC_NO,             KC_NO,             KC_NO,       KC_NO,          KC_NO,           KC_NO,     KC_NO,    KC_NO,          KC_NO,  KC_PGUP,        KC_NO,
         KC_TRANSPARENT, KC_LCTRL,          KC_LALT,           KC_LGUI,     MO(_LAYER_SYS), MO(_LAYER_SYS),  KC_RGUI,   KC_HOME,  KC_PGDOWN,      KC_END, KC_TRANSPARENT
     ),
-    [_LAYER_NAV] = LAYOUT(
+    [_LAYER_NAV] = LAYOUT( /* Navigation */
         KC_ESC,         KC_NO,    KC_NO,   KC_UP,   KC_NO,     KC_NO,    KC_NO,          KC_NO,   KC_UP,   KC_NO,    KC_NO,         KC_DELETE, KC_BSPACE,
         KC_TRANSPARENT, KC_NO,    KC_LEFT, KC_DOWN, KC_RIGHT,  KC_NO,    KC_NO,          KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO,         KC_NO,     KC_ENTER,
         KC_LSFT,        KC_NO,    KC_NO,   KC_NO,   KC_NO,     KC_NO,    KC_NO,          KC_NO,   KC_NO,   KC_NO,    KC_UP,         KC_RSFT,
         MO(_LAYER_FN),  KC_LCTRL, KC_LALT, KC_LGUI, KC_BSPACE, KC_SPACE, TG(_LAYER_NAV), KC_LEFT, KC_DOWN, KC_RIGHT, MO(_LAYER_FN)
     ),
-    [_LAYER_SYS] = LAYOUT(
+    [_LAYER_SYS] = LAYOUT( /* System */
         RESET, DEBUG,              KC_NO,            KC_NO,             KC_NO,           KC_NO,         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, EEPROM_RESET,
         KC_NO, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_AUDIO_MUTE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
         KC_NO, KC_NO,              KC_NO,            KC_NO,             KC_NO,           KC_NO,         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
